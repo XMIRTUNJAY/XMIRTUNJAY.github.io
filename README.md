@@ -8,14 +8,6 @@ A premium, creative-style developer portfolio designed for GitHub Pages.
 - Custom CSS3
 - Vanilla JavaScript
 
-## Included Projects (implemented)
-- `projects/ai-microcap-research-engine` — detailed microcap conviction scoring + report engine
-- `projects/stock-research-ai-engine` — AI-style stock signal scoring CLI
-- `projects/automated-financial-analysis` — financial ratio automation from CSV
-- `projects/equity-research-dashboard` — browser-based valuation snapshot dashboard
-- `projects/data-pipeline-architecture` — ingest/transform/quality/sink pipeline simulator
-- `projects/analytics-automation` — functional analytics transformation pipeline
-
 ## Structure
 
 ```text
@@ -23,13 +15,6 @@ A premium, creative-style developer portfolio designed for GitHub Pages.
 ├── index.html
 ├── styles.css
 ├── script.js
-├── projects/
-│   ├── ai-microcap-research-engine/
-│   ├── stock-research-ai-engine/
-│   ├── automated-financial-analysis/
-│   ├── equity-research-dashboard/
-│   ├── data-pipeline-architecture/
-│   └── analytics-automation/
 ├── assets/
 │   ├── images/
 │   └── icons/
