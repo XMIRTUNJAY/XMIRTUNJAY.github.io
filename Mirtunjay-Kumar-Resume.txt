@@ -1,0 +1,19 @@
+Mirtunjay Kumar
+Assistant Vice President — Data Engineering
+
+Location: India
+Email: kumar.mirtunjay@outlook.com
+GitHub: https://github.com/XMIRTUNJAY
+LinkedIn: https://www.linkedin.com/in/mirtunjaybgsc/
+
+Professional Focus
+- Enterprise data engineering for post-trade / financial systems
+- AI-assisted analytics workflows and scoring engines
+- Production-grade pipeline architecture with quality controls
+
+Core Stack
+- Python, SQL
+- AWS, Databricks
+- Data pipelines, analytics automation, reporting systems
+
+Portfolio highlights are available in this repository under /projects.
