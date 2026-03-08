@@ -1,0 +1,6 @@
+[
+  {"ticker": "ALFA", "pe": 11.2, "revenue_growth": 0.24, "debt_to_equity": 0.31, "insider_buying": true, "price_change_6m": 0.36},
+  {"ticker": "BETA", "pe": 29.4, "revenue_growth": 0.07, "debt_to_equity": 1.4, "insider_buying": false, "price_change_6m": -0.09},
+  {"ticker": "CETA", "pe": 16.8, "revenue_growth": 0.18, "debt_to_equity": 0.48, "insider_buying": true, "price_change_6m": 0.14},
+  {"ticker": "DORA", "pe": 8.5, "revenue_growth": 0.28, "debt_to_equity": 0.22, "insider_buying": true, "price_change_6m": 0.41}
+]

@@ -1,269 +1,238 @@
 <!DOCTYPE html>
-<html>
-<title>Mirtunjay Kumar </title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel = "icon" href ="ic.ico" 
-        type = "image/x-icon"> 
-          
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirtunjay Kumar | AVP Data Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Premium portfolio of Mirtunjay Kumar — AVP in post-trade technology focused on AWS, Databricks, data engineering, and AI-driven financial analytics."
+    />
+    <meta property="og:title" content="Mirtunjay Kumar | AVP Data Engineering Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore featured work in post-trade technology, financial analytics, AI systems, and modern data platforms."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="as2.jpg" />
+    <link rel="icon" href="ic.ico" type="image/x-icon" />
 
-}
-</style>
-<body class="w3-light-grey">
-<header class="w3-container w3-teal w3-center">
-   <!--div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact"-->
-   <h1 class="w3-text-yellow w3-padding-16"><i class="fa fa-file-word-o fa fa-download fa-fw w3-margin-left w3-xxlarge w3-text-white"></i><a href="https://drive.google.com/file/d/1mOu5AQAXs1psyaHaAt3E3C3xr2QtfKUU/view?usp=sharing"><span class="w3-tag w3-teal w3-round">Download My Resume</span></a>
-   
-   <span>M<span>irtunjay <span>K<span>umar is
-   </span>
-  <span
-     class="txt-rotate"
-     data-period="2000"
-     data-rotate='[ "awesome.", "simple.", "hard working!", "punctual.", "team player" ]'></span>
-</h1>
-    
-  </div>
-  
-</header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brandBg: '#0f172a',
+              brandCard: '#111827',
+              accent: '#38bdf8'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <body class="bg-slate-100 text-slate-900 dark:bg-brandBg dark:text-slate-100">
+    <div class="fixed inset-0 -z-10 bg-grid"></div>
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-white/70 dark:bg-slate-900/60 border-b border-slate-300/30 dark:border-slate-700/30">
+      <nav class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+        <a href="#home" class="font-display text-lg tracking-wide">MK</a>
+        <div class="hidden md:flex gap-6 text-sm">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button id="themeToggle" class="text-xs border border-slate-400/40 rounded-full px-3 py-1 hover:border-accent transition">Theme</button>
+      </nav>
+    </header>
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="as2.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomcenter w3-container w3-text-teal">
-            <h2>Mirtunjay Kumar</h2>
+    <main>
+      <section id="home" class="min-h-screen flex items-center relative px-6">
+        <div class="mx-auto max-w-6xl w-full">
+          <p class="uppercase tracking-[0.25em] text-accent text-xs mb-4">AVP • Post Trade Technology</p>
+          <h1 class="font-display text-5xl md:text-7xl leading-tight max-w-4xl">
+            Mirtunjay Kumar
+          </h1>
+          <p class="mt-6 text-lg md:text-2xl max-w-3xl text-slate-700 dark:text-slate-300">
+            Data Engineer | AI Builder | Financial Analytics — building resilient cloud-native data systems with AWS, Databricks, functional programming, and system thinking.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#projects" class="cta-primary">View Portfolio</a>
+            <a href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer" class="cta-secondary">GitHub</a>
           </div>
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Pune, India</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>kumar.mirtunjay@outlook.com</p>
-		  <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.linkedin.com/in/mirtunjaybgsc/">mirtunjaybgc</a></p>
-		  <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://github.com/XMIRTUNJAY">XMIRTUNJAY</a></p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>7550170887</p>
-          <hr>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+          <span></span>
+        </a>
+      </section>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Problem Solving Using C/C++,Java,Python</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+      <section id="about" class="py-24 px-6 reveal">
+        <div class="mx-auto max-w-6xl grid md:grid-cols-2 gap-10 items-center">
+          <div class="relative">
+            <img src="as2.jpg" alt="Mirtunjay Kumar profile" loading="lazy" class="rounded-3xl shadow-2xl object-cover w-full h-[420px]" />
           </div>
-          <p>Full Stack Development</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">
-              <div class="w3-center w3-text-white">75%</div>
+          <div>
+            <h2 class="section-title">About</h2>
+            <p class="mt-5 text-slate-700 dark:text-slate-300 leading-relaxed">
+              I am an AVP focused on post-trade technology, data platform modernization, and intelligent analytics for financial systems. My approach blends engineering precision with mental models and system thinking to design scalable, reliable outcomes.
+            </p>
+            <div class="mt-8 grid grid-cols-2 gap-3">
+              <span class="pill">Data Engineering</span>
+              <span class="pill">Python</span>
+              <span class="pill">Databricks</span>
+              <span class="pill">AWS</span>
+              <span class="pill">Financial Analytics</span>
+              <span class="pill">AI Systems</span>
             </div>
           </div>
-          <p>DEVOPS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-24 px-6 reveal">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="section-title">Project Portfolio</h2>
+          <div class="mt-10 grid md:grid-cols-2 gap-6">
+            <article class="project-card">
+              <h3>Stock Research AI Engine</h3>
+              <p>Automated microcap signal extraction and summarization pipeline for faster analyst decision-making.</p>
+              <p class="stack">Python • Signal Scoring • JSON</p>
+              <a href="projects/stock-research-ai-engine/README.md" target="_blank" rel="noreferrer">View project ↗</a>
+            </article>
+            <article class="project-card">
+              <h3>Automated Financial Analysis</h3>
+              <p>Computes financial statement metrics such as gross margin, operating margin, and debt coverage.</p>
+              <p class="stack">Python • CSV • Financial Ratios</p>
+              <a href="projects/automated-financial-analysis/README.md" target="_blank" rel="noreferrer">View project ↗</a>
+            </article>
+            <article class="project-card">
+              <h3>Equity Research Dashboard</h3>
+              <p>Static browser dashboard for quick valuation/growth snapshots and trend tagging.</p>
+              <p class="stack">HTML • CSS • JavaScript</p>
+              <a href="projects/equity-research-dashboard/index.html" target="_blank" rel="noreferrer">View project ↗</a>
+            </article>
+            <article class="project-card">
+              <h3>Data Pipeline Architecture</h3>
+              <p>Event-driven simulator covering ingest, transform, data quality filtering, and sink load summaries.</p>
+              <p class="stack">Python • Data Pipeline • Architecture</p>
+              <a href="projects/data-pipeline-architecture/README.md" target="_blank" rel="noreferrer">View project ↗</a>
+            </article>
+            <article class="project-card md:col-span-2">
+              <h3>Analytics Automation</h3>
+              <p>Composable functional pipeline with normalization and rolling analytics transformation steps.</p>
+              <p class="stack">Python • Functional Programming</p>
+              <a href="projects/analytics-automation/README.md" target="_blank" rel="noreferrer">View project ↗</a>
+            </article>
           </div>
-          <p>Soft Skills</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
+        </div>
+      </section>
+
+      <section class="py-28 px-6 reveal">
+        <div class="mx-auto max-w-6xl feature-panel rounded-3xl p-10 md:p-14">
+          <p class="text-accent uppercase text-xs tracking-[0.2em]">Featured Project</p>
+          <h2 class="font-display text-4xl md:text-6xl mt-2">AI Microcap Research Engine</h2>
+          <p class="max-w-3xl mt-6 text-slate-200">
+            A cinematic-scale data + AI architecture that ingests filings, market data, and news streams, then generates structured conviction signals for investment research teams.
+          </p>
+          <div class="mt-8 border border-slate-400/20 rounded-2xl p-6 bg-slate-900/35">
+            <p class="text-sm text-slate-300">Architecture diagram placeholder: ingest → lakehouse → model layer → analyst UI.</p>
           </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
-          </div>
-          <p>Hindi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-          </div>
-          <p>French</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <br>
+          <a href="projects/stock-research-ai-engine/README.md" target="_blank" rel="noreferrer" class="inline-block mt-6 cta-primary">Project Repository</a>
         </div>
-      </div><br>
+      </section>
 
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Senior Data Enginner @ Barclays</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Agile Project Development | Data Analytics | Data Ware House Management | Data Engineer | DevOps</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Software Developer Intern @ Tata Power SED</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - July 2018</h6>
-          <p>IOT | RaspBerry Pi | Tkinter | Full Stack Development</p>
-          <hr>
-        </div>
-        
-      </div>
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-teal"></i><b>Vellore Instittue of Technology</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2016 - May 2020</h6>
-          <p class="w3-opacity"><i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>Bachelor Degree - 8.7  CGPA</p>
-		  
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>MBP Sr. Sec. School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2016</h6>
-          <p class="w3-opacity"><i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>HSC - 88%</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>DAV Public School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2013</h6>
-          <p class="w3-opacity"><i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>SSC - 9.6 CGPA</p><br>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-		<div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-heart fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Volunteer Work</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>QUBIT - VIT</b></h5>
-          
-          <p>Managing technovit website and Organizing gaming events for tech fest Techno Vit</p>
-		  
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>CODE-Y-GEN - VIT</b></h5>
-          
-          <p>Organizing inter college gaming event in cultural fest of Vibrance</p>
-		  <p>Organizing school level gaming event for students for various private and government school of chennai post Vibrance</p>
-          <hr>
-        </div>
-        
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    </div>
-	
-	
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Wanna be a Freind? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i>Pune, India<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 755 017 0887<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: kumar.mirtunjay@outlook.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="" >
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <section id="experience" class="py-24 px-6 reveal">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="section-title">Experience Timeline</h2>
+          <div class="timeline mt-10">
+            <div class="timeline-item">
+              <h3>Assistant Vice President — Barclays</h3>
+              <p class="time">2024 — Present</p>
+              <p>Leading post-trade technology modernization, architecting cloud data patterns, and elevating data engineering standards.</p>
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            <div class="timeline-item">
+              <h3>Senior Data Engineer — Barclays</h3>
+              <p class="time">2020 — 2024</p>
+              <p>Built analytics pipelines, improved warehouse design, and delivered production-grade automation for financial workflows.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Software Developer Intern — Tata Power SED</h3>
+              <p class="time">2018</p>
+              <p>Delivered IoT prototypes using Raspberry Pi and full-stack components for internal tooling.</p>
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-</footer>
+        </div>
+      </section>
 
-</body>
-<script>
+      <section class="py-24 px-6 reveal" id="skills">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="section-title">Skills Visualization</h2>
+          <div class="mt-8 grid md:grid-cols-2 gap-8">
+            <div class="skill-group">
+              <p>Programming</p>
+              <div class="bar"><span style="--w: 92%"></span></div>
+              <p>Cloud</p>
+              <div class="bar"><span style="--w: 90%"></span></div>
+              <p>Data Engineering</p>
+              <div class="bar"><span style="--w: 94%"></span></div>
+              <p>Finance Analytics</p>
+              <div class="bar"><span style="--w: 88%"></span></div>
+              <p>Machine Learning</p>
+              <div class="bar"><span style="--w: 82%"></span></div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="icon-card">AWS</div>
+              <div class="icon-card">Databricks</div>
+              <div class="icon-card">Python</div>
+              <div class="icon-card">Post-Trade</div>
+              <div class="icon-card">System Thinking</div>
+              <div class="icon-card">Mental Models</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+      <section class="py-24 px-6 reveal" id="ideas">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="section-title">Ideas & Writing</h2>
+          <div class="mt-8 grid md:grid-cols-3 gap-5">
+            <article class="idea-card"><h3>Designing Reliable Data Pipelines</h3><p>Patterns for scaling finance-grade data engineering in cloud-native stacks.</p></article>
+            <article class="idea-card"><h3>Post-Trade Analytics Architecture</h3><p>How to balance speed, governance, and observability in market operations.</p></article>
+            <article class="idea-card"><h3>System Thinking for Engineering Teams</h3><p>Mental models to improve technical quality and strategic decisions.</p></article>
+          </div>
+        </div>
+      </section>
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+      <section id="contact" class="py-24 px-6 reveal">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="section-title">Contact</h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">Let’s build high-impact data and AI systems for finance.</p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a class="contact-link" href="mailto:kumar.mirtunjay@outlook.com">Email</a>
+            <a class="contact-link" href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
+    <footer class="py-10 text-center text-sm text-slate-500">
+      © <span id="year"></span> Mirtunjay Kumar — AVP, Data Engineering
+    </footer>
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
-
-
-
-
-
-</script>
+    <script src="script.js"></script>
+  </body>
 </html>
