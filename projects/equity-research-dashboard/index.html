@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equity Research Dashboard</title>
+    <style>
+      body { font-family: Inter, Arial, sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
+      .wrap { max-width: 980px; margin: 32px auto; padding: 0 16px; }
+      .card { background: #111827; border: 1px solid #334155; border-radius: 14px; padding: 16px; margin-bottom: 16px; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { padding: 10px; text-align: left; border-bottom: 1px solid #334155; }
+      .pill { padding: 4px 8px; border-radius: 20px; font-size: 12px; }
+      .up { background: #064e3b; color: #6ee7b7; }
+      .down { background: #4c0519; color: #fda4af; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Equity Research Dashboard</h1>
+      <div class="card">
+        <table id="table"></table>
+      </div>
+    </div>
+    <script>
+      const rows = [
+        { ticker: 'ALFA', pe: 11.2, growth: '24%', trend: 'up' },
+        { ticker: 'CETA', pe: 16.8, growth: '18%', trend: 'up' },
+        { ticker: 'BETA', pe: 29.4, growth: '7%', trend: 'down' }
+      ];
+
+      const table = document.getElementById('table');
+      table.innerHTML = `
+        <thead><tr><th>Ticker</th><th>P/E</th><th>Revenue Growth</th><th>Trend</th></tr></thead>
+        <tbody>
+          ${rows.map(r => `<tr>
+            <td>${r.ticker}</td>
+            <td>${r.pe}</td>
+            <td>${r.growth}</td>
+            <td><span class="pill ${r.trend}">${r.trend.toUpperCase()}</span></td>
+          </tr>`).join('')}
+        </tbody>`;
+    </script>
+  </body>
+</html>
