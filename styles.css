@@ -232,8 +232,30 @@ body.light .icon-grid > div {
 
 .skills-panel { padding: 1rem; }
 .skill-row { margin-bottom: 1rem; }
-.skill-row label { display: block; margin-bottom: .45rem; font-size: .86rem; color: #cbd5e1; }
+.skill-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: .45rem; gap: .6rem; }
+.skill-row label { display: block; font-size: .86rem; color: #cbd5e1; }
+.skill-meta { margin-top: .45rem; color: #94a3b8; font-size: .78rem; line-height: 1.35; }
+.score-badge {
+  font-size: .75rem;
+  color: #e2e8f0;
+  border: 1px solid rgba(125, 211, 252, 0.4);
+  border-radius: 999px;
+  padding: .15rem .55rem;
+  line-height: 1.35;
+}
+.cert-grid { display: grid; grid-template-columns: 1fr; gap: .7rem; }
+.cert-grid div {
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: .75rem;
+  padding: .75rem .85rem;
+  color: #cbd5e1;
+  background: rgba(15, 23, 42, 0.65);
+  font-size: .9rem;
+}
 
+body.light .score-badge { color: #0f172a; border-color: rgba(56, 189, 248, 0.45); }
+body.light .skill-meta { color: #475569; }
+body.light .cert-grid div { background: rgba(255,255,255,0.9); color: #334155; }
 .bar { height: .56rem; border-radius: 999px; background: rgba(148, 163, 184, 0.25); overflow: hidden; }
 .bar i { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #38bdf8, #818cf8); transition: width 1.2s ease; }
 
@@ -262,7 +284,7 @@ body.light .icon-grid > div {
   transition: opacity .7s ease, transform .7s ease;
 }
 
-.js .reveal.show {
+.reveal.show {
   opacity: 1;
   transform: translateY(0);
 }
