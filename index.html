@@ -56,8 +56,7 @@
       <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
         <a href="#home" class="font-display text-sm uppercase tracking-[0.25em] text-white">MIRTUNJAY</a>
         <div class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
           <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#contact">Contact</a>
         </div>
@@ -92,32 +91,66 @@
           </div>
         </div>
 
-        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <a href="#projects" class="scroll-indicator" aria-label="Scroll to projects section">
           <span></span>
           <small>Scroll</small>
         </a>
       </section>
 
-      <section id="about" class="section-wrap reveal">
-        <div class="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:px-8 lg:grid-cols-[0.8fr_1.2fr]">
-          <div class="about-card">
-            <img src="as.jpg" alt="Profile placeholder" loading="lazy" class="h-64 w-full rounded-2xl object-cover" />
-            <p class="mt-4 text-sm text-slate-300">Software/Data Engineer focused on elegant architecture and business impact.</p>
+      <section id="experience" class="section-wrap reveal">
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8">
+          <p class="section-kicker">Experience</p>
+          <h2 class="section-title">Career timeline</h2>
+          <div class="timeline mt-10">
+            <article class="timeline-item">
+              <span>Mar 2026 — Present</span>
+              <h3>Assistant Vice President — Data Engineering</h3>
+              <p>Leading scalable post-trade data systems, AI-assisted analytics, and platform modernization for capital markets workflows.</p>
+            </article>
+            <article class="timeline-item">
+              <span>Before Mar 2026</span>
+              <h3>Senior Data Engineer</h3>
+              <p>Built resilient cloud pipelines and performance-focused data products improving turnaround and reliability.</p>
+            </article>
+            <article class="timeline-item">
+              <span>Earlier Career Stage</span>
+              <h3>Data & Analytics Engineer</h3>
+              <p>Delivered financial analytics automation and reporting frameworks for cross-functional stakeholders.</p>
+            </article>
           </div>
-          <div>
-            <p class="section-kicker">About</p>
-            <h2 class="section-title">Designing systems that feel as premium as they perform.</h2>
-            <p class="mt-4 max-w-2xl text-slate-300">
-              I build reliable, scalable platforms for analytics and decision intelligence. My approach combines clean software design, cloud data engineering, and AI workflows to ship production-ready value quickly.
-            </p>
-            <div class="mt-8 grid gap-3 sm:grid-cols-2">
-              <div class="skill-chip">Data Engineering</div>
-              <div class="skill-chip">Python</div>
-              <div class="skill-chip">Databricks</div>
-              <div class="skill-chip">AWS</div>
-              <div class="skill-chip">Financial Analytics</div>
-              <div class="skill-chip">AI Systems</div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-wrap reveal">
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8">
+          <p class="section-kicker">Skills Visualization</p>
+          <h2 class="section-title">Skill proficiency (%).</h2>
+          <div class="mt-10 grid gap-6 md:grid-cols-2">
+            <div class="skills-panel">
+              <div class="skill-row"><label>SQL</label><div class="bar"><i data-width="90%"></i></div></div>
+              <div class="skill-row"><label>Python</label><div class="bar"><i data-width="80%"></i></div></div>
+              <div class="skill-row"><label>Databricks</label><div class="bar"><i data-width="80%"></i></div></div>
+              <div class="skill-row"><label>AWS</label><div class="bar"><i data-width="60%"></i></div></div>
+              <div class="skill-row"><label>Regulatory Reporting</label><div class="bar"><i data-width="80%"></i></div></div>
             </div>
+            <div class="skills-panel">
+              <div class="skill-row"><label>Post-Trade Technology</label><div class="bar"><i data-width="80%"></i></div></div>
+              <div class="skill-row"><label>Bash & Unix</label><div class="bar"><i data-width="80%"></i></div></div>
+              <div class="skill-row"><label>CI/CD</label><div class="bar"><i data-width="70%"></i></div></div>
+              <div class="skill-row"><label>Machine Learning</label><div class="bar"><i data-width="70%"></i></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ideas" class="section-wrap reveal">
+        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8">
+          <p class="section-kicker">Ideas</p>
+          <h2 class="section-title">Thought pieces in progress.</h2>
+          <div class="mt-8 grid gap-4 md:grid-cols-3">
+            <article class="idea-card"><h3>Designing Trustworthy Data Pipelines</h3><p>Patterns for observability, quality gates, and graceful failure recovery.</p></article>
+            <article class="idea-card"><h3>AI for Equity Research</h3><p>Where automation helps analysts focus on thesis, not manual filtering.</p></article>
+            <article class="idea-card"><h3>Finance Analytics Productization</h3><p>Turning one-off dashboards into reusable internal products.</p></article>
           </div>
         </div>
       </section>
@@ -164,6 +197,7 @@
         </a>
       </section>
 
+
       <section id="featured" class="section-wrap reveal">
         <div class="mx-auto max-w-6xl px-5 pb-20 md:px-8">
           <div class="featured-block">
@@ -179,61 +213,6 @@
               <div>Scoring Engine</div>
               <div>Report Generator</div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" class="section-wrap reveal">
-        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8">
-          <p class="section-kicker">Experience</p>
-          <h2 class="section-title">Career timeline</h2>
-          <div class="timeline mt-10">
-            <article class="timeline-item">
-              <span>Current</span>
-              <h3>Assistant Vice President — Data Engineering</h3>
-              <p>Leading scalable post-trade data systems, AI-assisted analytics, and platform modernization for capital markets workflows.</p>
-            </article>
-            <article class="timeline-item">
-              <span>Previous</span>
-              <h3>Senior Data Engineer</h3>
-              <p>Built resilient cloud pipelines and performance-focused data products improving turnaround and reliability.</p>
-            </article>
-            <article class="timeline-item">
-              <span>Earlier</span>
-              <h3>Data & Analytics Engineer</h3>
-              <p>Delivered financial analytics automation and reporting frameworks for cross-functional stakeholders.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section-wrap reveal">
-        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8">
-          <p class="section-kicker">Skills Visualization</p>
-          <h2 class="section-title">Technical depth across engineering and finance.</h2>
-          <div class="mt-10 grid gap-6 md:grid-cols-2">
-            <div class="skills-panel">
-              <div class="skill-row"><label>Programming</label><div class="bar"><i data-width="92%"></i></div></div>
-              <div class="skill-row"><label>Cloud</label><div class="bar"><i data-width="88%"></i></div></div>
-              <div class="skill-row"><label>Data Engineering</label><div class="bar"><i data-width="94%"></i></div></div>
-              <div class="skill-row"><label>Finance Analytics</label><div class="bar"><i data-width="85%"></i></div></div>
-              <div class="skill-row"><label>Machine Learning</label><div class="bar"><i data-width="80%"></i></div></div>
-            </div>
-            <div class="icon-grid">
-              <div>Python</div><div>SQL</div><div>AWS</div><div>Databricks</div><div>Airflow</div><div>Power BI</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="ideas" class="section-wrap reveal">
-        <div class="mx-auto max-w-6xl px-5 py-20 md:px-8">
-          <p class="section-kicker">Ideas</p>
-          <h2 class="section-title">Thought pieces in progress.</h2>
-          <div class="mt-8 grid gap-4 md:grid-cols-3">
-            <article class="idea-card"><h3>Designing Trustworthy Data Pipelines</h3><p>Patterns for observability, quality gates, and graceful failure recovery.</p></article>
-            <article class="idea-card"><h3>AI for Equity Research</h3><p>Where automation helps analysts focus on thesis, not manual filtering.</p></article>
-            <article class="idea-card"><h3>Finance Analytics Productization</h3><p>Turning one-off dashboards into reusable internal products.</p></article>
           </div>
         </div>
       </section>
