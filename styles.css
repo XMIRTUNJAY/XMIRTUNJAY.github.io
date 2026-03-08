@@ -27,6 +27,10 @@ body.light .site-header {
   z-index: -1;
   background-image: radial-gradient(circle at 25% 25%, rgba(56, 189, 248, 0.14), transparent 45%), radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.16), transparent 40%);
 }
+.cta-primary { background: #38bdf8; color: #0f172a; font-weight: 600; }
+.cta-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px -12px #38bdf8; }
+.cta-secondary, .contact-link { border: 1px solid rgba(148,163,184,.45); }
+.cta-secondary:hover, .contact-link:hover { border-color: #38bdf8; color: #38bdf8; }
 
 .gradient-orb {
   position: fixed;
@@ -183,12 +187,14 @@ body.light .icon-grid > div {
 @media (min-width: 900px) {
   .featured-block { grid-template-columns: 1fr 1fr; padding: 2rem; }
 }
+@keyframes grow { from { width: 0; } }
 
 .architecture-placeholder {
   display: grid;
   gap: .75rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.project-card a:hover, .idea-card a:hover { text-decoration: underline; }
 
 .architecture-placeholder div {
   border: 1px solid rgba(148, 163, 184, 0.3);
