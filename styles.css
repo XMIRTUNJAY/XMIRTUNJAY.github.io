@@ -284,7 +284,7 @@ body.light .cert-grid div { background: rgba(255,255,255,0.9); color: #334155; }
   transition: opacity .7s ease, transform .7s ease;
 }
 
-.js .reveal.show {
+.reveal.show {
   opacity: 1;
   transform: translateY(0);
 }
