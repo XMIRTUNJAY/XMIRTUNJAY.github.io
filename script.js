@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 const revealElements = document.querySelectorAll('.reveal');
 const bars = document.querySelectorAll('.bar i');
 const themeToggle = document.getElementById('themeToggle');
@@ -5,25 +7,41 @@ const year = document.getElementById('year');
 
 if (year) year.textContent = new Date().getFullYear();
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        if (entry.target.id === 'skills') {
-          bars.forEach((bar) => {
-            bar.style.width = bar.dataset.width || '0%';
-          });
+const revealAll = () => {
+  revealElements.forEach((el) => el.classList.add('show'));
+  bars.forEach((bar) => {
+    bar.style.width = bar.dataset.width || '0%';
+  });
+};
+
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          if (entry.target.id === 'skills') {
+            bars.forEach((bar) => {
+              bar.style.width = bar.dataset.width || '0%';
+            });
+          }
         }
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
+      });
+    },
+    { threshold: 0.2 }
+  );
 
-revealElements.forEach((el) => revealObserver.observe(el));
+  revealElements.forEach((el) => revealObserver.observe(el));
+} else {
+  revealAll();
+}
 
-const savedTheme = localStorage.getItem('portfolioTheme');
+let savedTheme = null;
+try {
+  savedTheme = localStorage.getItem('portfolioTheme');
+} catch (error) {
+  savedTheme = null;
+}
 if (savedTheme === 'light') {
   document.body.classList.add('light');
   document.documentElement.classList.remove('dark');
@@ -34,7 +52,11 @@ if (themeToggle) {
   themeToggle.addEventListener('click', () => {
     const isLight = document.body.classList.toggle('light');
     document.documentElement.classList.toggle('dark', !isLight);
-    localStorage.setItem('portfolioTheme', isLight ? 'light' : 'dark');
+    try {
+      localStorage.setItem('portfolioTheme', isLight ? 'light' : 'dark');
+    } catch (error) {
+      // Ignore storage restrictions (e.g., strict privacy/file protocol).
+    }
     themeToggle.textContent = isLight ? 'Dark' : 'Light';
   });
 }
