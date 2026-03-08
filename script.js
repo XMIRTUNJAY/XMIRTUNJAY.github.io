@@ -1,36 +1,40 @@
 const revealElements = document.querySelectorAll('.reveal');
-const yearNode = document.getElementById('year');
+const bars = document.querySelectorAll('.bar i');
 const themeToggle = document.getElementById('themeToggle');
+const year = document.getElementById('year');
 
-if (yearNode) {
-  yearNode.textContent = new Date().getFullYear();
-}
+if (year) year.textContent = new Date().getFullYear();
 
-if (revealElements.length > 0) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        if (entry.target.id === 'skills') {
+          bars.forEach((bar) => {
+            bar.style.width = bar.dataset.width || '0%';
+          });
         }
-      });
-    },
-    { threshold: 0.14 }
-  );
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
 
-  revealElements.forEach((el) => observer.observe(el));
-}
+revealElements.forEach((el) => revealObserver.observe(el));
 
-const savedTheme = localStorage.getItem('themePreference');
-if (savedTheme === 'dark') {
-  document.body.classList.add('dark');
-  if (themeToggle) themeToggle.textContent = 'Light';
+const savedTheme = localStorage.getItem('portfolioTheme');
+if (savedTheme === 'light') {
+  document.body.classList.add('light');
+  document.documentElement.classList.remove('dark');
+  if (themeToggle) themeToggle.textContent = 'Dark';
 }
 
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
-    const isDark = document.body.classList.toggle('dark');
-    localStorage.setItem('themePreference', isDark ? 'dark' : 'light');
-    themeToggle.textContent = isDark ? 'Light' : 'Dark';
+    const isLight = document.body.classList.toggle('light');
+    document.documentElement.classList.toggle('dark', !isLight);
+    localStorage.setItem('portfolioTheme', isLight ? 'light' : 'dark');
+    themeToggle.textContent = isLight ? 'Dark' : 'Light';
   });
 }
