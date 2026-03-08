@@ -24,8 +24,9 @@ const root = document.documentElement;
 const toggle = document.getElementById('themeToggle');
 const savedTheme = localStorage.getItem('themePreference');
 
-if (savedTheme === 'light') {
-  root.classList.remove('dark');
+if (savedTheme === 'data-theme') {
+  root.classList.remove('ai-theme');
+  root.classList.add('data-theme');
 }
 
 if (toggle) {

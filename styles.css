@@ -2,14 +2,30 @@
   color-scheme: light dark;
 }
 
-* {
-  scroll-behavior: smooth;
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  background-image: linear-gradient(rgba(0, 112, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 112, 184, 0.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, black 48%, transparent 96%);
 }
 
 .nav-link {
   position: relative;
 }
 
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.nav-link { position: relative; opacity: 0.9; }
 .nav-link::after {
   content: '';
   position: absolute;
@@ -20,6 +36,7 @@
   background: #0ea5e9;
   transition: width 0.2s ease;
 }
+.nav-link:hover::after { width: 100%; }
 
 .nav-link:hover::after {
   width: 100%;
@@ -89,6 +106,9 @@
   font-weight: 700;
   margin-bottom: 0.3rem;
 }
+.node:nth-child(3) { animation-delay: 0.25s; }
+.node:nth-child(5) { animation-delay: 0.5s; }
+.node:nth-child(7) { animation-delay: 0.75s; }
 
 .card p,
 .timeline-item.clean p {
@@ -101,6 +121,7 @@
 .dark .timeline-item.clean p {
   color: rgb(203 213 225);
 }
+@keyframes flowLine { from { opacity: 0.35; } to { opacity: 1; } }
 
 .stat-card {
   padding: 0.75rem;
@@ -112,6 +133,7 @@
   letter-spacing: 0.07em;
   color: rgb(100 116 139);
 }
+.snapshot-contact a:hover { text-decoration: underline; }
 
 .dark .stat-k {
   color: rgb(148 163 184);
@@ -133,17 +155,17 @@
   transform: translateY(14px);
   transition: opacity 0.55s ease, transform 0.55s ease;
 }
+.reveal.show { opacity: 1; transform: translateY(0); }
 
-.reveal.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+#roleCycle { transition: opacity 0.18s ease; }
 
 @media (max-width: 768px) {
   .btn {
     width: 100%;
     text-align: center;
   }
+  .theme-btn { font-size: 0.76rem; }
+  .snapshot-panel { min-height: auto; }
 }
 
 #roleCycle { transition: opacity 0.18s ease; }
