@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mirtunjay Kumar | Animated Data Engineering CV</title>
+    <title>Mirtunjay Kumar | Data Engineering Resume</title>
     <meta
       name="description"
-      content="Mirtunjay Kumar CV — AVP Data Engineering. Animated resume showcasing pipeline automation, analytics systems, and SLA-driven delivery."
+      content="Online resume of Mirtunjay Kumar — AVP, Data Engineering. Focused on enterprise data platforms, financial analytics, and production-ready AI workflows."
     />
-    <meta property="og:title" content="Mirtunjay Kumar | Animated Data Engineering CV" />
+    <meta property="og:title" content="Mirtunjay Kumar | Data Engineering Resume" />
     <meta
       property="og:description"
-      content="High-quality resume page with animated pipeline automation, analytics flow, SLA monitoring, and strategic project highlights."
+      content="Clean resume-first portfolio showcasing enterprise data engineering impact, projects, and execution readiness."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="as2.jpg" />
@@ -20,194 +20,161 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              ink: '#0f172a',
+              paper: '#f8fafc',
+              line: '#cbd5e1',
+              accent: '#0ea5e9'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body>
-    <div class="bg-grid"></div>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-
-    <header class="site-header">
+  <body class="bg-paper text-ink dark:bg-slate-950 dark:text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur">
       <nav class="mx-auto max-w-6xl px-5 py-3 flex items-center justify-between">
-        <a href="#home" class="brand">MK / CV</a>
-        <div class="hidden md:flex gap-6 text-sm">
+        <a href="#home" class="font-semibold tracking-tight text-lg">Mirtunjay Kumar</a>
+        <div class="hidden md:flex gap-5 text-sm text-slate-600 dark:text-slate-300">
           <a href="#summary" class="nav-link">Summary</a>
-          <a href="#architecture" class="nav-link">Architecture</a>
           <a href="#projects" class="nav-link">Projects</a>
           <a href="#experience" class="nav-link">Experience</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
-        <button id="themeToggle" class="theme-btn">Switch to Data Engineering Theme</button>
+        <button id="themeToggle" class="btn btn-outline text-xs">Theme</button>
       </nav>
     </header>
 
     <main class="mx-auto max-w-6xl px-5">
-      <section id="home" class="pt-12 pb-10">
-        <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-start">
+      <section id="home" class="pt-10 md:pt-14 pb-8">
+        <div class="grid lg:grid-cols-[1.35fr_1fr] gap-8 items-start">
           <div>
-            <p class="chip">AVP • Post-Trade Tech • <span id="roleCycle">AI Builder</span></p>
-            <h1 class="hero-title mt-4">
-              Data Engineering CV with <span>Pipeline Automation + SLA Intelligence</span>
+            <p class="text-sm uppercase tracking-[0.18em] text-sky-600 dark:text-sky-300">AVP • Data Engineering • Post-Trade Technology</p>
+            <h1 class="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+              Building enterprise-ready data systems that are <span class="text-sky-600 dark:text-sky-300">configurable, reliable, and fast to deploy.</span>
             </h1>
-            <p class="body-muted mt-5 max-w-3xl text-base md:text-lg">
-              I build enterprise-grade data systems that combine ingestion, transformation, analytics, and SLA-governed operations. This CV is intentionally designed as a live systems narrative.
+            <p class="mt-4 text-base md:text-lg text-slate-700 dark:text-slate-300 max-w-3xl">
+              I design and deliver plug-and-play data engineering modules for financial analytics, reporting automation, and decision intelligence. This site is structured as an online resume with high-signal project proof points.
             </p>
 
             <div class="mt-6 flex flex-wrap gap-3">
-              <a href="#projects" class="btn btn-primary">Explore Projects</a>
-              <a href="Mirtunjay-Kumar-Resume.txt" class="btn btn-secondary" download>Download Resume</a>
-              <a href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer" class="btn btn-secondary">LinkedIn</a>
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer" class="btn btn-outline">GitHub</a>
+              <a href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer" class="btn btn-outline">LinkedIn</a>
             </div>
 
-            <div class="metrics mt-8">
-              <article class="metric-card tilt">
-                <p class="metric-key">Core Focus</p>
-                <p class="metric-value">Pipeline Automation</p>
+            <div class="mt-7 grid sm:grid-cols-3 gap-3">
+              <article class="stat-card">
+                <p class="stat-k">Focus</p>
+                <p class="stat-v">Enterprise Data Engineering</p>
               </article>
-              <article class="metric-card tilt">
-                <p class="metric-key">Analytics</p>
-                <p class="metric-value">Decision-Ready Data Products</p>
+              <article class="stat-card">
+                <p class="stat-k">Domain</p>
+                <p class="stat-v">Capital Markets / Post-Trade</p>
               </article>
-              <article class="metric-card tilt">
-                <p class="metric-key">Governance</p>
-                <p class="metric-value">SLA + Quality Controls</p>
+              <article class="stat-card">
+                <p class="stat-k">Strength</p>
+                <p class="stat-v">Productionization + Business Alignment</p>
               </article>
             </div>
           </div>
 
-          <aside class="control-panel reveal">
-            <div class="panel-head">
-              <img src="as2.jpg" alt="Mirtunjay Kumar" class="w-14 h-14 rounded-xl object-cover border border-slate-400/40" />
-              <div>
-                <p class="panel-kicker">Operations Console</p>
-                <h2 class="font-display text-xl">Live Data Flow</h2>
-              </div>
-            </div>
-
-            <div class="pipeline-flow mt-6">
-              <div class="node">Ingest</div>
-              <div class="connector"></div>
-              <div class="node">Transform</div>
-              <div class="connector"></div>
-              <div class="node">Analytics</div>
-              <div class="connector"></div>
-              <div class="node">SLA</div>
-              <div class="connector"></div>
-              <div class="node">Serve</div>
-            </div>
-
-            <div class="sla-card mt-6">
-              <p><span class="accent-text">SLA Status:</span> 99.95% within threshold</p>
-              <div class="sla-bar">
-                <span></span>
-              </div>
-              <p class="body-soft text-sm mt-2">Auto-alerts and quality checks running on each pipeline stage.</p>
-            </div>
-
-            <div class="snapshot-contact mt-6">
-              <a href="mailto:kumar.mirtunjay@outlook.com">kumar.mirtunjay@outlook.com</a>
-              <a href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer">github.com/XMIRTUNJAY</a>
-            </div>
+          <aside class="panel">
+            <img src="as2.jpg" alt="Mirtunjay Kumar" class="w-24 h-24 rounded-2xl object-cover border border-slate-300 dark:border-slate-700" />
+            <h2 class="mt-4 text-xl font-bold">Quick Resume Snapshot</h2>
+            <ul class="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+              <li><strong>Role:</strong> Assistant Vice President</li>
+              <li><strong>Specialization:</strong> Data platforms, analytics automation, AI-assisted research</li>
+              <li><strong>Stack:</strong> Python, SQL, Databricks, AWS</li>
+              <li><strong>Delivery style:</strong> Modular, testable, enterprise-configurable</li>
+            </ul>
+            <a href="mailto:kumar.mirtunjay@outlook.com" class="btn btn-primary mt-5 w-full text-center">Contact for opportunities</a>
           </aside>
         </div>
       </section>
 
-      <section id="summary" class="section-divider py-9 reveal">
+      <section id="summary" class="py-8 border-t border-slate-200 dark:border-slate-800 reveal">
         <h2 class="section-title">Professional Summary</h2>
-        <div class="grid md:grid-cols-2 gap-4 mt-5">
-          <article class="glass-card tilt">
-            <h3>Strategic Value</h3>
-            <p>I convert business problems into deployable data products with measurable outcomes and clean operational controls.</p>
+        <div class="mt-4 grid md:grid-cols-2 gap-4">
+          <article class="card">
+            <h3>What I deliver</h3>
+            <p>Data workflows that go from raw inputs to decision-ready outputs with quality checks and operational discipline.</p>
           </article>
-          <article class="glass-card tilt">
-            <h3>Execution Style</h3>
-            <p>Agile, modular, and enterprise-ready delivery focused on fast iteration, testability, and scalable architecture patterns.</p>
-          </article>
-        </div>
-        <div class="summary-action-bar mt-5">
-          <a class="btn btn-secondary" href="mailto:kumar.mirtunjay@outlook.com">Contact</a>
-          <a class="btn btn-primary" href="Mirtunjay-Kumar-Resume.txt" download>Download Resume</a>
-        </div>
-      </section>
-
-      <section id="architecture" class="section-divider py-9 reveal">
-        <h2 class="section-title">Pipeline Automation Architecture</h2>
-        <div class="architecture-board mt-5">
-          <article class="lane-card">
-            <h3>Automation Lane</h3>
-            <p>Scheduled and event-driven workflows orchestrating ingest → transform → load with quality checkpoints.</p>
-          </article>
-          <article class="lane-card">
-            <h3>Analytics Lane</h3>
-            <p>Standardized KPI generation and ranking engines producing reliable insights for decision stakeholders.</p>
-          </article>
-          <article class="lane-card">
-            <h3>SLA Lane</h3>
-            <p>Threshold monitoring, failure alerts, and operational observability ensuring resilient enterprise delivery.</p>
+          <article class="card">
+            <h3>How I think</h3>
+            <p>Systems-first, measurable outcomes, and reusable architecture so teams can move from pilot to production quickly.</p>
           </article>
         </div>
       </section>
 
-      <section id="projects" class="section-divider py-9 reveal">
-        <h2 class="section-title">Strategic Projects</h2>
-        <div class="grid md:grid-cols-2 gap-4 mt-5">
-          <article class="glass-card project-card tilt">
+      <section id="projects" class="py-8 border-t border-slate-200 dark:border-slate-800 reveal">
+        <div class="flex items-end justify-between flex-wrap gap-3">
+          <h2 class="section-title">Strategic Project Portfolio</h2>
+          <a href="https://github.com/XMIRTUNJAY.github.io" class="text-sm text-sky-600 dark:text-sky-300">View repository</a>
+        </div>
+        <div class="mt-4 grid md:grid-cols-2 gap-4">
+          <article class="card">
             <h3>AI Microcap Research Engine</h3>
-            <p>Weighted factor + sentiment ranking with explainable markdown report output for research workflows.</p>
-            <span>Scoring • Sentiment • Report Automation</span>
+            <p>Weighted factor + sentiment scoring workflow that produces ranked picks and explainable analyst-style reports.</p>
           </article>
-          <article class="glass-card project-card tilt">
+          <article class="card">
             <h3>Data Pipeline Architecture</h3>
-            <p>Ingest→transform→quality→sink simulator showing production data engineering flow skeleton.</p>
-            <span>Ingestion • Data Quality • Serving</span>
+            <p>Ingest → transform → quality check → sink simulation used as a template for enterprise orchestration design.</p>
           </article>
-          <article class="glass-card project-card tilt">
+          <article class="card">
             <h3>Automated Financial Analysis</h3>
-            <p>Converts statement rows into KPI outputs for consistent analytics reporting and enterprise reuse.</p>
-            <span>KPI Standardization • CLI Module</span>
+            <p>Turns statement-level financial inputs into standardized KPI outputs for repeatable reporting and downstream BI.</p>
           </article>
-          <article class="glass-card project-card tilt">
+          <article class="card">
             <h3>Stock Research AI Engine</h3>
-            <p>Rule-based prioritization engine with deterministic thesis generation and bounded score logic.</p>
-            <span>Governed Rules • Analyst Triage</span>
+            <p>Rule-based ranking and thesis generation for prioritizing analyst attention with transparent scoring logic.</p>
           </article>
         </div>
       </section>
 
-      <section id="experience" class="section-divider py-9 reveal">
+      <section id="experience" class="py-8 border-t border-slate-200 dark:border-slate-800 reveal">
         <h2 class="section-title">Experience Highlights</h2>
-        <div class="grid gap-4 mt-5">
-          <article class="glass-card timeline-item">
+        <div class="mt-4 space-y-3">
+          <article class="timeline-item clean">
             <h3>Assistant Vice President — Data Engineering</h3>
-            <p class="time">Capital Markets Technology • Current</p>
-            <p>Driving post-trade platform modernization with scalable data pipelines, analytics acceleration, and operational reliability.</p>
+            <p class="time">Capital markets technology • Current</p>
+            <p>Leading design and implementation of scalable post-trade data systems, analytics automation, and platform modernization.</p>
           </article>
-          <article class="glass-card timeline-item">
+          <article class="timeline-item clean">
             <h3>Senior Data Engineer</h3>
-            <p class="time">Cloud + Financial Data Systems</p>
-            <p>Built resilient, reusable data components improving throughput, quality assurance, and release velocity.</p>
+            <p class="time">Financial systems and cloud data platforms</p>
+            <p>Built and optimized resilient data pipelines, improving throughput, reliability, and data product turnaround time.</p>
           </article>
         </div>
       </section>
 
-      <section id="contact" class="section-divider py-10 reveal">
+      <section id="contact" class="py-10 border-t border-slate-200 dark:border-slate-800 reveal">
         <h2 class="section-title">Contact</h2>
-        <p class="body-muted mt-2">Open to impactful opportunities in AI-enabled enterprise data engineering and platform strategy.</p>
+        <p class="mt-2 text-slate-700 dark:text-slate-300">Open to strategic data engineering roles where fast, production-grade execution is valued.</p>
         <div class="mt-5 flex flex-wrap gap-3">
-          <a class="btn btn-secondary" href="mailto:kumar.mirtunjay@outlook.com">Email</a>
-          <a class="btn btn-secondary" href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-outline" href="mailto:kumar.mirtunjay@outlook.com">Email</a>
+          <a class="btn btn-outline" href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </section>
     </main>
 
-    <footer class="py-8 text-center text-sm body-soft">
+    <footer class="py-8 text-center text-sm text-slate-500 dark:text-slate-400">
       © <span id="year"></span> Mirtunjay Kumar
     </footer>
 
