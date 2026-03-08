@@ -1,34 +1,40 @@
-document.documentElement.classList.add('js-enabled');
+const revealElements = document.querySelectorAll('.reveal');
+const bars = document.querySelectorAll('.bar i');
+const themeToggle = document.getElementById('themeToggle');
+const year = document.getElementById('year');
 
-const observer = new IntersectionObserver(
+if (year) year.textContent = new Date().getFullYear();
+
+const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
+        if (entry.target.id === 'skills') {
+          bars.forEach((bar) => {
+            bar.style.width = bar.dataset.width || '0%';
+          });
+        }
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0.2 }
 );
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+revealElements.forEach((el) => revealObserver.observe(el));
 
-const yearNode = document.getElementById('year');
-if (yearNode) {
-  yearNode.textContent = new Date().getFullYear();
-}
-
-const root = document.documentElement;
-const toggle = document.getElementById('themeToggle');
-const savedTheme = localStorage.getItem('themePreference');
-
+const savedTheme = localStorage.getItem('portfolioTheme');
 if (savedTheme === 'light') {
-  root.classList.remove('dark');
+  document.body.classList.add('light');
+  document.documentElement.classList.remove('dark');
+  if (themeToggle) themeToggle.textContent = 'Dark';
 }
 
-if (toggle) {
-  toggle.addEventListener('click', () => {
-    root.classList.toggle('dark');
-    localStorage.setItem('themePreference', root.classList.contains('dark') ? 'dark' : 'light');
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const isLight = document.body.classList.toggle('light');
+    document.documentElement.classList.toggle('dark', !isLight);
+    localStorage.setItem('portfolioTheme', isLight ? 'light' : 'dark');
+    themeToggle.textContent = isLight ? 'Dark' : 'Light';
   });
 }
