@@ -1,17 +1,24 @@
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
+const revealElements = document.querySelectorAll('.reveal');
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+if (revealElements.length > 0) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
 
-document.getElementById('year').textContent = new Date().getFullYear();
+  revealElements.forEach((el) => observer.observe(el));
+}
+
+const yearNode = document.getElementById('year');
+if (yearNode) {
+  yearNode.textContent = new Date().getFullYear();
+}
 
 const root = document.documentElement;
 const toggle = document.getElementById('themeToggle');
@@ -21,7 +28,9 @@ if (savedTheme === 'light') {
   root.classList.remove('dark');
 }
 
-toggle.addEventListener('click', () => {
-  root.classList.toggle('dark');
-  localStorage.setItem('themePreference', root.classList.contains('dark') ? 'dark' : 'light');
-});
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    root.classList.toggle('dark');
+    localStorage.setItem('themePreference', root.classList.contains('dark') ? 'dark' : 'light');
+  });
+}
