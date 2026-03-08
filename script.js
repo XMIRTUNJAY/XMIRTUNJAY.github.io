@@ -32,14 +32,6 @@ if ('IntersectionObserver' in window) {
   );
 
   revealElements.forEach((el) => revealObserver.observe(el));
-
-  // Safety fallback: if observer callbacks are blocked/delayed in a browser,
-  // reveal all content so sections never remain hidden.
-  window.setTimeout(() => {
-    if (!document.querySelector('.reveal.show')) {
-      revealAll();
-    }
-  }, 1200);
 } else {
   revealAll();
 }
