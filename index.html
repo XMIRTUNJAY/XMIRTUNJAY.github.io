@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" class="ai-theme">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mirtunjay Kumar | Data Engineering Resume</title>
+    <title>Mirtunjay Kumar | AI Builder & Data Engineer</title>
     <meta
       name="description"
-      content="Online resume of Mirtunjay Kumar — AVP, Data Engineering. Focused on enterprise data platforms, financial analytics, and production-ready AI workflows."
+      content="Mirtunjay Kumar — software/data engineer and AI builder creating elegant, production-grade data systems for financial analytics."
     />
-    <meta property="og:title" content="Mirtunjay Kumar | Data Engineering Resume" />
+    <meta property="og:title" content="Mirtunjay Kumar | AI Builder & Data Engineer" />
     <meta
       property="og:description"
-      content="Clean resume-first portfolio showcasing enterprise data engineering impact, projects, and execution readiness."
+      content="Apple-inspired clean portfolio showcasing data engineering, AI systems, and financial analytics projects."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="as2.jpg" />
+    <meta property="og:url" content="https://xmirtunjay.github.io/" />
     <link rel="icon" href="ic.ico" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,13 +32,15 @@
         theme: {
           extend: {
             colors: {
-              ink: '#0f172a',
-              paper: '#f8fafc',
-              line: '#cbd5e1',
-              accent: '#0ea5e9'
+              shell: '#f5f5f7',
+              ink: '#1d1d1f',
+              muted: '#6e6e73',
+              card: '#ffffff',
+              line: '#d2d2d7',
+              blue: '#0071e3'
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif']
+              sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'Segoe UI', 'sans-serif']
             }
           }
         }
@@ -46,135 +49,129 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body class="bg-paper text-ink dark:bg-slate-950 dark:text-slate-100">
-    <header class="sticky top-0 z-50 border-b border-slate-200/80 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur">
-      <nav class="mx-auto max-w-6xl px-5 py-3 flex items-center justify-between">
-        <a href="#home" class="font-semibold tracking-tight text-lg">Mirtunjay Kumar</a>
-        <div class="hidden md:flex gap-5 text-sm text-slate-600 dark:text-slate-300">
+  <body class="bg-shell text-ink">
+    <header class="site-header">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 md:px-8">
+        <a href="#home" class="brand">MIRTUNJAY</a>
+        <div class="hidden items-center gap-6 text-sm text-muted md:flex">
           <a href="#summary" class="nav-link">Summary</a>
           <a href="#projects" class="nav-link">Projects</a>
           <a href="#experience" class="nav-link">Experience</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
-        <button id="themeToggle" class="btn btn-outline text-xs">Theme</button>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">Dark</button>
       </nav>
     </header>
 
-    <main class="mx-auto max-w-6xl px-5">
-      <section id="home" class="pt-10 md:pt-14 pb-8">
-        <div class="grid lg:grid-cols-[1.35fr_1fr] gap-8 items-start">
+    <main class="mx-auto max-w-6xl px-5 pt-24 md:px-8">
+      <section id="home" class="hero reveal">
+        <div class="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] items-center">
           <div>
-            <p class="text-sm uppercase tracking-[0.18em] text-sky-600 dark:text-sky-300">AVP • Data Engineering • Post-Trade Technology</p>
-            <h1 class="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-              Building enterprise-ready data systems that are <span class="text-sky-600 dark:text-sky-300">configurable, reliable, and fast to deploy.</span>
+            <p class="eyebrow">AI Builder • Data Engineer • Financial Analytics</p>
+            <h1 class="hero-title">
+              Mirtunjay Kumar
+              <span>Building dependable intelligence systems with product-level polish.</span>
             </h1>
-            <p class="mt-4 text-base md:text-lg text-slate-700 dark:text-slate-300 max-w-3xl">
-              I design and deliver plug-and-play data engineering modules for financial analytics, reporting automation, and decision intelligence. This site is structured as an online resume with high-signal project proof points.
+            <p class="hero-copy">
+              I design and ship configurable data and AI platforms for finance workflows — from ingestion to insight, with production readiness at the core.
             </p>
-
             <div class="mt-6 flex flex-wrap gap-3">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer" class="btn btn-outline">GitHub</a>
-              <a href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer" class="btn btn-outline">LinkedIn</a>
-            </div>
-
-            <div class="mt-7 grid sm:grid-cols-3 gap-3">
-              <article class="stat-card">
-                <p class="stat-k">Focus</p>
-                <p class="stat-v">Enterprise Data Engineering</p>
-              </article>
-              <article class="stat-card">
-                <p class="stat-k">Domain</p>
-                <p class="stat-v">Capital Markets / Post-Trade</p>
-              </article>
-              <article class="stat-card">
-                <p class="stat-k">Strength</p>
-                <p class="stat-v">Productionization + Business Alignment</p>
-              </article>
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn" href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
           </div>
 
-          <aside class="panel">
-            <img src="as2.jpg" alt="Mirtunjay Kumar" class="w-24 h-24 rounded-2xl object-cover border border-slate-300 dark:border-slate-700" />
-            <h2 class="mt-4 text-xl font-bold">Quick Resume Snapshot</h2>
-            <ul class="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-300">
-              <li><strong>Role:</strong> Assistant Vice President</li>
-              <li><strong>Specialization:</strong> Data platforms, analytics automation, AI-assisted research</li>
+          <aside class="snapshot-card">
+            <img src="as2.jpg" alt="Mirtunjay Kumar" loading="lazy" class="h-24 w-24 rounded-2xl object-cover" />
+            <h2>Profile Snapshot</h2>
+            <ul>
+              <li><strong>Current:</strong> AVP, Data Engineering</li>
+              <li><strong>Domain:</strong> Capital Markets</li>
               <li><strong>Stack:</strong> Python, SQL, Databricks, AWS</li>
-              <li><strong>Delivery style:</strong> Modular, testable, enterprise-configurable</li>
+              <li><strong>Strength:</strong> Fast pilot-to-production execution</li>
             </ul>
-            <a href="mailto:kumar.mirtunjay@outlook.com" class="btn btn-primary mt-5 w-full text-center">Contact for opportunities</a>
           </aside>
         </div>
       </section>
 
-      <section id="summary" class="py-8 border-t border-slate-200 dark:border-slate-800 reveal">
+      <section id="summary" class="section reveal">
         <h2 class="section-title">Professional Summary</h2>
-        <div class="mt-4 grid md:grid-cols-2 gap-4">
+        <div class="grid gap-4 md:grid-cols-2 mt-4">
           <article class="card">
             <h3>What I deliver</h3>
-            <p>Data workflows that go from raw inputs to decision-ready outputs with quality checks and operational discipline.</p>
+            <p>Reliable data workflows and AI systems that transform raw inputs into decision-ready outputs with governance and quality built in.</p>
           </article>
           <article class="card">
-            <h3>How I think</h3>
-            <p>Systems-first, measurable outcomes, and reusable architecture so teams can move from pilot to production quickly.</p>
+            <h3>How I build</h3>
+            <p>System-first architecture, measurable outcomes, reusable modules, and clean handoff paths for enterprise production environments.</p>
           </article>
         </div>
       </section>
 
-      <section id="projects" class="py-8 border-t border-slate-200 dark:border-slate-800 reveal">
+      <section id="projects" class="section reveal">
         <div class="flex items-end justify-between flex-wrap gap-3">
-          <h2 class="section-title">Strategic Project Portfolio</h2>
-          <a href="https://github.com/XMIRTUNJAY.github.io" class="text-sm text-sky-600 dark:text-sky-300">View repository</a>
+          <h2 class="section-title">Project Portfolio</h2>
+          <a href="https://github.com/XMIRTUNJAY.github.io" class="text-sm text-blue hover:underline">Repository</a>
         </div>
-        <div class="mt-4 grid md:grid-cols-2 gap-4">
-          <article class="card">
-            <h3>AI Microcap Research Engine</h3>
-            <p>Weighted factor + sentiment scoring workflow that produces ranked picks and explainable analyst-style reports.</p>
-          </article>
-          <article class="card">
-            <h3>Data Pipeline Architecture</h3>
-            <p>Ingest → transform → quality check → sink simulation used as a template for enterprise orchestration design.</p>
-          </article>
-          <article class="card">
-            <h3>Automated Financial Analysis</h3>
-            <p>Turns statement-level financial inputs into standardized KPI outputs for repeatable reporting and downstream BI.</p>
-          </article>
-          <article class="card">
+
+        <div class="project-grid mt-5">
+          <article class="project-card">
             <h3>Stock Research AI Engine</h3>
-            <p>Rule-based ranking and thesis generation for prioritizing analyst attention with transparent scoring logic.</p>
+            <p>Rule-based ranking and explainable thesis support for equity idea prioritization.</p>
+            <span>Python • Scoring • NLP</span>
+          </article>
+          <article class="project-card">
+            <h3>Automated Financial Analysis</h3>
+            <p>Transforms statement-level data into standardized KPIs and repeatable analysis outputs.</p>
+            <span>Python • Pandas • KPI Automation</span>
+          </article>
+          <article class="project-card">
+            <h3>Equity Research Dashboard</h3>
+            <p>Visual dashboard framework for market monitoring and analyst storytelling.</p>
+            <span>Frontend • Data Viz • Reporting</span>
+          </article>
+          <article class="project-card">
+            <h3>Data Pipeline Architecture</h3>
+            <p>Ingest-to-quality-to-sink pipeline simulation as a reusable enterprise blueprint.</p>
+            <span>Data Engineering • Validation • Orchestration</span>
+          </article>
+          <article class="project-card">
+            <h3>Analytics Automation</h3>
+            <p>Reusable analytics modules for reducing manual operations in financial workflows.</p>
+            <span>Automation • ETL • Reporting</span>
           </article>
         </div>
       </section>
 
-      <section id="experience" class="py-8 border-t border-slate-200 dark:border-slate-800 reveal">
-        <h2 class="section-title">Experience Highlights</h2>
-        <div class="mt-4 space-y-3">
-          <article class="timeline-item clean">
+      <section id="experience" class="section reveal">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline mt-5">
+          <article class="timeline-item">
             <h3>Assistant Vice President — Data Engineering</h3>
-            <p class="time">Capital markets technology • Current</p>
-            <p>Leading design and implementation of scalable post-trade data systems, analytics automation, and platform modernization.</p>
+            <p class="time">Current • Capital Markets Technology</p>
+            <p>Leading platform modernization, AI-assisted analytics systems, and resilient post-trade data pipelines.</p>
           </article>
-          <article class="timeline-item clean">
+          <article class="timeline-item">
             <h3>Senior Data Engineer</h3>
-            <p class="time">Financial systems and cloud data platforms</p>
-            <p>Built and optimized resilient data pipelines, improving throughput, reliability, and data product turnaround time.</p>
+            <p class="time">Previous</p>
+            <p>Built and optimized scalable cloud data products, improving throughput and reliability of business-critical reporting.</p>
           </article>
         </div>
       </section>
 
-      <section id="contact" class="py-10 border-t border-slate-200 dark:border-slate-800 reveal">
+      <section id="contact" class="section reveal pb-14">
         <h2 class="section-title">Contact</h2>
-        <p class="mt-2 text-slate-700 dark:text-slate-300">Open to strategic data engineering roles where fast, production-grade execution is valued.</p>
+        <p class="mt-3 text-muted max-w-2xl">Open to strategic opportunities across data engineering, AI systems, and finance analytics.</p>
         <div class="mt-5 flex flex-wrap gap-3">
-          <a class="btn btn-outline" href="mailto:kumar.mirtunjay@outlook.com">Email</a>
-          <a class="btn btn-outline" href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn btn-outline" href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="mailto:kumar.mirtunjay@outlook.com">Email</a>
+          <a class="btn" href="https://github.com/XMIRTUNJAY" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/mirtunjaybgsc/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </section>
     </main>
 
-    <footer class="py-8 text-center text-sm text-slate-500 dark:text-slate-400">
+    <footer class="border-t border-line py-7 text-center text-sm text-muted">
       © <span id="year"></span> Mirtunjay Kumar
     </footer>
 

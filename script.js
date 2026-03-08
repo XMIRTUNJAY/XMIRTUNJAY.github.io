@@ -1,4 +1,10 @@
 const revealElements = document.querySelectorAll('.reveal');
+const yearNode = document.getElementById('year');
+const themeToggle = document.getElementById('themeToggle');
+
+if (yearNode) {
+  yearNode.textContent = new Date().getFullYear();
+}
 
 if (revealElements.length > 0) {
   const observer = new IntersectionObserver(
@@ -9,29 +15,22 @@ if (revealElements.length > 0) {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.14 }
   );
 
   revealElements.forEach((el) => observer.observe(el));
 }
 
-const yearNode = document.getElementById('year');
-if (yearNode) {
-  yearNode.textContent = new Date().getFullYear();
-}
-
-const root = document.documentElement;
-const toggle = document.getElementById('themeToggle');
 const savedTheme = localStorage.getItem('themePreference');
-
-if (savedTheme === 'data-theme') {
-  root.classList.remove('ai-theme');
-  root.classList.add('data-theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark');
+  if (themeToggle) themeToggle.textContent = 'Light';
 }
 
-if (toggle) {
-  toggle.addEventListener('click', () => {
-    root.classList.toggle('dark');
-    localStorage.setItem('themePreference', root.classList.contains('dark') ? 'dark' : 'light');
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark');
+    localStorage.setItem('themePreference', isDark ? 'dark' : 'light');
+    themeToggle.textContent = isDark ? 'Light' : 'Dark';
   });
 }
