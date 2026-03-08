@@ -233,6 +233,7 @@ body.light .icon-grid > div {
 .skills-panel { padding: 1rem; }
 .skill-row { margin-bottom: 1rem; }
 .skill-row label { display: block; margin-bottom: .45rem; font-size: .86rem; color: #cbd5e1; }
+
 .bar { height: .56rem; border-radius: 999px; background: rgba(148, 163, 184, 0.25); overflow: hidden; }
 .bar i { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #38bdf8, #818cf8); transition: width 1.2s ease; }
 
@@ -251,9 +252,19 @@ body.light .icon-grid > div {
 }
 
 .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.js .reveal {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity .7s ease, transform .7s ease;
+}
+
+.js .reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
