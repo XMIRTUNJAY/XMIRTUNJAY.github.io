@@ -256,6 +256,11 @@ body.light .icon-grid > div {
   transition: opacity .7s ease, transform .7s ease;
 }
 
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .gradient-orb { width: 18rem; height: 18rem; }
 }
