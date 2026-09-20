@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# AI answer engines and assistants may crawl and cite this site's
+# Marathi-learning content with attribution.
+User-agent: GPTBot
+Allow: /learn-marathi/
+Allow: /engineering-notebook/
+
+User-agent: ClaudeBot
+Allow: /learn-marathi/
+Allow: /engineering-notebook/
+
+User-agent: PerplexityBot
+Allow: /learn-marathi/
+Allow: /engineering-notebook/
+
+User-agent: Google-Extended
+Allow: /learn-marathi/
+Allow: /engineering-notebook/
+
+Sitemap: https://xmirtunjay.github.io/sitemap.xml
